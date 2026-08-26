@@ -62,8 +62,8 @@ hermes-full-layer-skill:
               candy:
                 base: fedora
                 candy:
-                  - agent-forwarding
-                  - hermes-full
+                  - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                  - '@github.com/opencharly/pod-hermes-full:v2026.237.938'
                   - '@github.com/opencharly/pod-dbus:v2026.235.2115'
             ```
             
@@ -245,8 +245,8 @@ hermes-layer-skill:
             hermes:
               base: fedora
               candy:
-                - agent-forwarding
-                - hermes-full
+                - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                - '@github.com/opencharly/pod-hermes-full:v2026.237.938'
                 - '@github.com/opencharly/pod-dbus:v2026.235.2115'
             ```
             
@@ -347,9 +347,9 @@ hermes-playwright-layer-skill:
             hermes-playwright:
               base: fedora
               candy:
-                - agent-forwarding
-                - hermes
-                - hermes-playwright
+                - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                - '@github.com/opencharly/pod-hermes:v2026.237.936'
+                - '@github.com/opencharly/layer-hermes-playwright:v2026.238.2102'
                 - '@github.com/opencharly/pod-dbus:v2026.235.2115'
                 - charly
             ```
@@ -399,7 +399,7 @@ playwright-layer-skill:
               candy:
                 base: fedora
                 candy:
-                  - playwright
+                  - '@github.com/opencharly/layer-playwright:v2026.237.557'
             ```
             
             ## Used In Boxes
