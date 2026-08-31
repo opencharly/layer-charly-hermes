@@ -1,7 +1,7 @@
 version: 2026.232.0520
 charly-hermes:
     candy:
-        version: 2026.218.1200
+        version: 2026.243.0100
         description: |-
             Metadata concept candy owning the charly-hermes skills whose names have no namesake candy (hermes agent images). Owns its family's `skill:` kind entities (sibling nodes in this file) — the
             the plugins→candies migration; candy/plugin-marketplace regenerates the marketplace
@@ -62,7 +62,7 @@ hermes-full-layer-skill:
               candy:
                 base: fedora
                 candy:
-                  - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                  - '@github.com/opencharly/layer-agent-forwarding:v2026.243.0408'
                   - '@github.com/opencharly/pod-hermes-full:v2026.237.938'
                   - '@github.com/opencharly/pod-dbus:v2026.235.2115'
             ```
@@ -245,7 +245,7 @@ hermes-layer-skill:
             hermes:
               base: fedora
               candy:
-                - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
+                - '@github.com/opencharly/layer-agent-forwarding:v2026.243.0408'
                 - '@github.com/opencharly/pod-hermes-full:v2026.237.938'
                 - '@github.com/opencharly/pod-dbus:v2026.235.2115'
             ```
@@ -347,9 +347,9 @@ hermes-playwright-layer-skill:
             hermes-playwright:
               base: fedora
               candy:
-                - '@github.com/opencharly/layer-agent-forwarding:v2026.238.1851'
-                - '@github.com/opencharly/pod-hermes:v2026.237.936'
-                - '@github.com/opencharly/layer-hermes-playwright:v2026.238.2102'
+                - '@github.com/opencharly/layer-agent-forwarding:v2026.243.0408'
+                - '@github.com/opencharly/pod-hermes:v2026.243.0516'
+                - '@github.com/opencharly/layer-hermes-playwright:v2026.243.0818'
                 - '@github.com/opencharly/pod-dbus:v2026.235.2115'
                 - charly
             ```
