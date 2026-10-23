@@ -1,51 +1,19 @@
 charly-hermes:
     candy:
         description: |-
-            Metadata concept candy owning the charly-hermes skills whose names have no namesake candy (hermes agent images). Owns its family's `skill:` kind entities (sibling nodes in this file) — the
-            the plugins→candies migration; candy/plugin-marketplace regenerates the marketplace
-            corpus (the standalone opencharly/marketplace repo) from them.
+            Drained concept candy — kept only so this repo still validates as a project while
+            it awaits retirement (opencharly/opencharly#600). It owns NO `skill:` entity any
+            more: under AGENTS.md Part II #5 the 4 `hermes` family skills moved,
+            byte-identically, to the repositories that hold the code, plugin or config each one
+            documents — `layer-hermes-playwright`, `layer-playwright`, `pod-hermes`, `pod-hermes-full`.
+            Nothing is authored here now.
         plan:
-            - run: this documentation-only candy ships no install content (it carries the family's skill/hook/marketplace entities); validate-satisfying no-op
+            - run: this documentation-only candy ships no install content (it carried the family's skill entities); validate-satisfying no-op
               command: "true"
               context:
                 - build
-            - check: the hermes concept candy's skill entities are present and generated into the marketplace's hermes/skills
-              id: charly-hermes-present
+            - check: no-op — this drained candy declares no skill node; every hermes-family skill lives in the repo that holds the entity it documents
+              id: charly-hermes-drained
               context:
                 - build
               command: "true"
-
-hermes-full-layer-skill:
-    skill:
-        name: hermes-full-layer
-        family: hermes
-        owner: charly-hermes
-        description: |-
-            Hermes agent with AI CLIs (Claude Code, Codex, Gemini), developer tools, DevOps tools, and charly.
-            Use when working with the hermes-full metalayer or full-featured standalone hermes deployments.
-hermes-layer-skill:
-    skill:
-        name: hermes-layer
-        family: hermes
-        owner: charly-hermes
-        description: |-
-            Hermes self-improving AI agent by Nous Research with voice, messaging, and tool-calling.
-            MUST be invoked before any work involving: the hermes candy, Hermes Agent configuration,
-            hermes service setup, or hermes Python/npm dependencies.
-hermes-playwright-layer-skill:
-    skill:
-        name: hermes-playwright-layer
-        family: hermes
-        owner: charly-hermes
-        description: |-
-            Playwright Chromium browser for Hermes Agent with Fedora-compatible system deps.
-            MUST be invoked before any work involving: Playwright in hermes containers,
-            Chromium browser automation for hermes, or hermes-playwright candy configuration.
-playwright-layer-skill:
-    skill:
-        name: playwright-layer
-        family: hermes
-        owner: charly-hermes
-        description: |-
-            Playwright browser automation (OpenClaw AI snapshots).
-            Use when working with the playwright candy.
